@@ -1,0 +1,58 @@
+int ss = 5 + 's';
+int s = (24 - 6)/5 * 3;
+double g(int b, int c, double q){
+    {}
+}
+
+int q2(){
+    if(func(1,2,s, 5 + func2()));
+    else{;}
+}
+
+const int w = 4;
+
+const double e = 4;
+
+const double s = 'q';
+
+double c = 136;
+
+int privet2(){
+    const int s = 4;
+    int b = 4;
+    if( f(1,2,3) + 2 )
+        b = b() + 5;
+    else{
+        {;;{;{;};};{;};};;;
+
+        if( f()){
+            b = b + 5;
+            func(s, 3+3);
+
+             if( f()){
+                b = b + 5;
+                func(s, 3+3);
+             }
+             else{
+                 {;;{;{;};};{;};};;;
+                 const double rr = '2';
+             }
+        }
+        else{
+            {;;{;{;};};{;};};;;
+            const double rr = '2';
+        }
+    }
+    ;;;;
+    if(t >= 3)
+        heh();
+    else ;
+}
+
+int f;
+
+int main(){
+    privet2();
+    const double sss = '3';
+}
+double a,b = 5,c;
