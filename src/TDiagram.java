@@ -9,8 +9,12 @@ public class TDiagram {
 
     Interpreter interpreter;
 
+   Triad triad;
+
     Tree pointer_current_function;
 
+    String lastTriad;
+    //Container currentContainer;
 
     int flag_interpreter = 1;
 
@@ -26,7 +30,7 @@ public class TDiagram {
 
         scaner = new Scaner();
         if( this.programma()){
-            System.out.println("all is ok");
+            System.out.println("\n\nall is ok");
             this.flag_createPicture = 1;
             semantic.createPicture();
         }
@@ -47,6 +51,7 @@ public class TDiagram {
         interpreter = new Interpreter();
         interpreter.tDiagram = this;
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        this.triad = new Triad();
 
         int t ;
         SavePoint savePoint1 ;
@@ -189,6 +194,13 @@ public class TDiagram {
 
     /// / Объявление переменных
     public boolean declaration_of_variable() throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("declaration_of_variable");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -208,6 +220,9 @@ public class TDiagram {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    sem1
         do{
             t = scaner.next(l);
+
+            operandFirst = arrayChar2String(l);
+
             if( t != scaner._ID){
                 scaner.printError("10Ожидался идентификато",l);
                 return false;
@@ -221,10 +236,18 @@ public class TDiagram {
             t = scaner.next(l);
             //this.scaner.setUk(uk1);   scaner.setSavePoint(savePoint1);
             if( t == scaner._ASSIGN){
+
+                operatorT = this.arrayChar2String(l);
+
                 // =
                 // в точке 2 получить тип и значение выражения V
                 if( !this.expression(containerG))
                     return false;
+
+                // триады
+                container2 = containerG.copy();
+                operandSecond = this.lastTriad;
+
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    sem3
 
                 semantic.sem3(containerT, containerG, l);
@@ -236,6 +259,13 @@ public class TDiagram {
                 interpreter.saveValue_in_Tree(containerG, k);
 
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                // триады создание печать
+                int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+                this.triad.printTriadNum(indexTriad);
+                this.lastTriad = String.valueOf(indexTriad) + ")";
+
                 savePoint1 = scaner.getSavePoint();
                 t = scaner.next(l);
             }
@@ -605,6 +635,13 @@ public class TDiagram {
 
     // присваивание
     public boolean assignment() throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("assignment");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -618,6 +655,9 @@ public class TDiagram {
             scaner.printError("21Ожидался идентификатор",l);
             return false;
         }
+
+        operandFirst = this.arrayChar2String(l);
+
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem5
         Tree k = semantic.sem5Assign(l, containerT);
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem5
@@ -627,8 +667,15 @@ public class TDiagram {
             return false;
         }
 
+        operatorT = arrayChar2String(l);
+
         if( !this.expression(containerG))  // выражение
             return false;
+
+
+        // триады
+        container2 = containerG.copy();
+        operandSecond = this.lastTriad;
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem3
         // Проверяем приводимость типов
@@ -639,6 +686,12 @@ public class TDiagram {
         // Устанавливаем флаг, что переменная определена
         semantic.semParamDeclared(k,containerG, l);
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// semParamDeclared
+
+
+        // триады создание печать
+        int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+        this.triad.printTriadNum(indexTriad);
+        this.lastTriad = String.valueOf(indexTriad) + ")";
 
         t = scaner.next(l);
         if( t != scaner._SEMICOLON){
@@ -874,6 +927,13 @@ public class TDiagram {
 
     // выражение
     public boolean expression(Container container) throws IOException, InterruptedException, Exception{
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("expression");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -882,13 +942,25 @@ public class TDiagram {
         // type = scaner.next(l);
         if( !this.A2(container))
             return false;
+        // триады
+        container1 = container.copy();
+        operandFirst = this.lastTriad;
 
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
-        while (t == scaner._NOT_EQUALLY || t == scaner._EQUALLY){
+        while (t == scaner._NOT_EQUALLY ||
+                t == scaner._EQUALLY){
+
+            operatorT = this.arrayChar2String(l);
+
             Container containerG = new Container();
+
             if( !A2(containerG))
                 return false;
+
+            // триады
+            container2 = containerG.copy();
+            operandSecond = this.lastTriad;
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// sem6
             int newType = semantic.sem6(container, containerG, t, l);
             container.value.change_types(newType, container.type);
@@ -898,6 +970,13 @@ public class TDiagram {
             interpreter.calculate(container, containerG, t);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) + ")";
+
+
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
         }
@@ -909,6 +988,11 @@ public class TDiagram {
     public boolean A2(Container container) throws IOException, InterruptedException, Exception {
 
 //
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
 
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("A2");
         ArrayList<Character> l = new ArrayList<>();
@@ -918,13 +1002,28 @@ public class TDiagram {
         //type = scaner.next(l);
         if( !this.A3(container))
             return false;
+        // триады
+        container1 = container.copy();
+        operandFirst = this.lastTriad;
+
 
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
-        while (t == scaner._GREAT|| t == scaner._LESS || t == scaner._GREAT_EQUALLY || t == scaner._LESS_EQUALLY){
+        while (t == scaner._GREAT ||
+                t == scaner._LESS ||
+                t == scaner._GREAT_EQUALLY ||
+                t == scaner._LESS_EQUALLY){
+
+            operatorT = this.arrayChar2String(l);
+
             Container containerG = new Container();
+
             if ( !this.A3(containerG))
                 return false;
+
+            // триады
+            container2 = containerG.copy();
+            operandSecond = this.lastTriad;
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// sem6
             int newType = semantic.sem6(container, containerG, t, l);
             container.value.change_types(newType, container.type);
@@ -934,6 +1033,13 @@ public class TDiagram {
             interpreter.calculate(container, containerG, t);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) + ")";
+
+
               savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
         }
@@ -942,6 +1048,13 @@ public class TDiagram {
     }
 
     public boolean A3(Container container) throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("A3");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -951,12 +1064,25 @@ public class TDiagram {
         if ( !this.A4(container))
             return false;
 
+        // триады
+        container1 = container.copy();
+        operandFirst = this.lastTriad;
+
           savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
-        while (t == scaner._SHIFT_LEFT|| t == scaner._SHIFT_RIGHT ){
+        while (t == scaner._SHIFT_LEFT ||
+                t == scaner._SHIFT_RIGHT ){
+
+            operatorT = this.arrayChar2String(l);
+
             Container containerG = new Container();
+
             if( !this.A4(containerG))
                 return false;
+
+            // триады
+            container2 = containerG.copy();
+            operandSecond = this.lastTriad;
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// sem6
             int newType = semantic.sem6(container, containerG, t, l);
             container.value.change_types(newType, container.type);
@@ -966,6 +1092,12 @@ public class TDiagram {
             interpreter.calculate(container, containerG, t);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) + ")";
+
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
         }
@@ -973,6 +1105,13 @@ public class TDiagram {
         return true;
     }
     public boolean A4( Container container) throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("A4");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -983,12 +1122,25 @@ public class TDiagram {
         if( !this.A5(container))
             return false;
 
+        // триады
+        container1 = container.copy();
+        operandFirst = this.lastTriad;
+
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
-        while (t == scaner._PLUS|| t == scaner._MINUS ){
+        while (t == scaner._PLUS ||
+                t == scaner._MINUS ){
+
+            operatorT = this.arrayChar2String(l);
+
             Container containerG = new Container();
+
             if( !this.A5(containerG))
                 return false;
+
+            // триады
+            container2 = containerG.copy();
+            operandSecond = this.lastTriad;
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// sem6
             int newType = semantic.sem6(container, containerG, t, l);
             container.value.change_types(newType, container.type);
@@ -996,6 +1148,12 @@ public class TDiagram {
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// interpreter calculate
             interpreter.calculate(container, containerG, t);
             ///////////////////////////////////////////////////////////////////////////////////////////////////fu//////////
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) + ")";
+
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
         }
@@ -1004,6 +1162,13 @@ public class TDiagram {
     }
 
     public boolean A5(Container container) throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("A5");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -1013,12 +1178,27 @@ public class TDiagram {
         if( !this.A6(container))
             return false;
 
+        // триады
+        container1 = container.copy();
+        operandFirst = this.lastTriad;
+
+
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
-        while (t == scaner._STAR || t == scaner._SLASH || t == scaner._PERCENT ){
+        while (t == scaner._STAR ||
+                t == scaner._SLASH ||
+                t == scaner._PERCENT ){
+
+            operatorT = this.arrayChar2String(l);
+
             Container containerG = new Container();
+
             if( !this.A6(containerG))
                 return false;
+
+            // триады
+            container2 = containerG.copy();
+            operandSecond = this.lastTriad;
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// sem6
             int newType = semantic.sem6(container, containerG, t, l);
             container.value.change_types(newType, container.type);
@@ -1026,6 +1206,12 @@ public class TDiagram {
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////// interpreter calculate
             interpreter.calculate(container, containerG, t);
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) + ")";
+
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
         }
@@ -1035,6 +1221,8 @@ public class TDiagram {
     }
 
     public boolean A6( Container container) throws IOException, InterruptedException, Exception {
+
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("A6");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -1043,12 +1231,19 @@ public class TDiagram {
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
 
-        if( t == scaner._TYPE_CHAR  || t == scaner._TYPE_INT_8 || t == scaner._TYPE_INT_10 || t == scaner._TYPE_INT_16 ){
+        if(     t == scaner._TYPE_CHAR  ||
+                t == scaner._TYPE_INT_8 ||
+                t == scaner._TYPE_INT_10 ||
+                t == scaner._TYPE_INT_16 ){
             // константа
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem55
             semantic.sem55(t,container);
             interpreter.saveValue(l,container);
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+            this.lastTriad = arrayChar2String(l);
+
             return true;
         }
         else if( t == scaner._PARENTHESIS_OPEN ){
@@ -1082,6 +1277,8 @@ public class TDiagram {
                 Tree node = semantic.sem5(l, container);
                 interpreter.setValue_from_Tree(node, container);
                 /////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                this.lastTriad = arrayChar2String(l);
                 return true;
             }
         }
