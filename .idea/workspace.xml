@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944592eb-3811-44ed-bd16-5c2db64b5e8c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Container.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Interpreter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Lexem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/SavePoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Scaner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Semantic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/TDataValue.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/TDiagram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/yaziki_5/Tuple.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Thumbs.db" afterPath="$PROJECT_DIR$/Thumbs.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result.jpg" afterPath="$PROJECT_DIR$/result.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result.gv" afterPath="$PROJECT_DIR$/result.gv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+            <state relative-caret-position="391">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,90 +28,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="1275">
+              <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yaziki_5.iml" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TDiagram.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="308" column="28" lean-forward="false" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="28" />
+            <state relative-caret-position="140">
+              <caret line="315" column="75" selection-start-line="315" selection-start-column="75" selection-end-line="315" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#TDiagram#0;class#TDiagram#0" expanded="true" />
                 <element signature="e#732#733#0" expanded="true" />
                 <element signature="e#824#825#0" expanded="true" />
-                <element signature="method#programma#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#2299#2305#0" expanded="true" />
-                <element signature="method#declaration_of_constant#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#6147#6189#0" expanded="true" />
-                <element signature="method#declaration_of_variable#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#8089#8209#0" expanded="true" />
-                <element signature="e#8720#8724#0" expanded="true" />
-                <element signature="e#9148#9268#0" expanded="true" />
-                <element signature="e#10892#11011#0" expanded="true" />
-                <element signature="e#11394#11403#0" expanded="true" />
-                <element signature="e#11801#11918#0" expanded="true" />
-                <element signature="e#12547#12665#0" expanded="true" />
-                <element signature="method#lis_of_parametr#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#14076#14189#0" expanded="true" />
-                <element signature="method#compound_operator_WITHOUT_CREATE_BLACK_VERTEX#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#15417#15473#0" expanded="true" />
-                <element signature="method#compound_operator#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#18449#18505#0" expanded="true" />
-                <element signature="method#func_return#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#operator#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#22824#22856#0" expanded="true" />
-                <element signature="method#assignment#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#25102#25219#0" expanded="true" />
-                <element signature="e#25541#25670#0" expanded="true" />
-                <element signature="method#func_call#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#26451#26483#0" expanded="true" />
-                <element signature="e#26961#27008#0" expanded="true" />
-                <element signature="e#27280#27312#0" expanded="true" />
-                <element signature="e#27787#27904#0" expanded="true" />
-                <element signature="e#29623#29703#0" expanded="true" />
-                <element signature="method#func_if#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#31551#31626#0" expanded="true" />
-                <element signature="e#32442#32517#0" expanded="true" />
-                <element signature="e#32993#33068#0" expanded="true" />
-                <element signature="e#33798#33873#0" expanded="true" />
-                <element signature="method#expression#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#A2#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#A3#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#A4#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#A5#0;class#TDiagram#0" expanded="true" />
-                <element signature="method#A6#0;class#TDiagram#0" expanded="true" />
-                <element signature="e#41603#41615#0" expanded="true" />
-                <element signature="e#42874#42890#0" expanded="true" />
-                <element signature="method#arrayChar2String#0;class#TDiagram#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Semantic.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Semantic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+            <state relative-caret-position="7582">
+              <caret line="451" selection-start-line="451" selection-end-line="451" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,26 +81,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interpreter.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+            <state relative-caret-position="748">
+              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#setValue_from_Tree#0;class#Interpreter#0" expanded="true" />
-                <element signature="method#calculate#0;class#Interpreter#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TDataValue.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1785">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -219,11 +161,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -239,14 +176,9 @@
         <option value="$PROJECT_DIR$/src/Interpreter.java" />
         <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/src/TDiagram.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -276,8 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,6 +230,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -388,48 +320,51 @@
       <workItem from="1551372476526" duration="50000" />
       <workItem from="1551377553459" duration="3075000" />
       <workItem from="1551805924373" duration="13000" />
+      <workItem from="1554284033222" duration="272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207797000" />
+    <option name="totallyTimeSpent" value="208069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11568123" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,271 +712,45 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Semantic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9471">
-          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setValue_from_Tree#0;class#Interpreter#0" expanded="true" />
-            <element signature="method#calculate#0;class#Interpreter#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6468">
-          <caret line="308" column="28" lean-forward="false" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TDiagram#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="method#programma#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#2299#2305#0" expanded="true" />
-            <element signature="method#declaration_of_constant#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#6147#6189#0" expanded="true" />
-            <element signature="method#declaration_of_variable#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#8089#8209#0" expanded="true" />
-            <element signature="e#8720#8724#0" expanded="true" />
-            <element signature="e#9148#9268#0" expanded="true" />
-            <element signature="e#10892#11011#0" expanded="true" />
-            <element signature="e#11394#11403#0" expanded="true" />
-            <element signature="e#11801#11918#0" expanded="true" />
-            <element signature="e#12547#12665#0" expanded="true" />
-            <element signature="method#lis_of_parametr#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#14076#14189#0" expanded="true" />
-            <element signature="method#compound_operator_WITHOUT_CREATE_BLACK_VERTEX#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#15417#15473#0" expanded="true" />
-            <element signature="method#compound_operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#18449#18505#0" expanded="true" />
-            <element signature="method#func_return#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#22824#22856#0" expanded="true" />
-            <element signature="method#assignment#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#25102#25219#0" expanded="true" />
-            <element signature="e#25541#25670#0" expanded="true" />
-            <element signature="method#func_call#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#26451#26483#0" expanded="true" />
-            <element signature="e#26961#27008#0" expanded="true" />
-            <element signature="e#27280#27312#0" expanded="true" />
-            <element signature="e#27787#27904#0" expanded="true" />
-            <element signature="e#29623#29703#0" expanded="true" />
-            <element signature="method#func_if#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#31551#31626#0" expanded="true" />
-            <element signature="e#32442#32517#0" expanded="true" />
-            <element signature="e#32993#33068#0" expanded="true" />
-            <element signature="e#33798#33873#0" expanded="true" />
-            <element signature="method#expression#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A2#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A3#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A4#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A5#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A6#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#41603#41615#0" expanded="true" />
-            <element signature="e#42874#42890#0" expanded="true" />
-            <element signature="method#arrayChar2String#0;class#TDiagram#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11256">
-          <caret line="536" column="19" lean-forward="false" selection-start-line="536" selection-start-column="19" selection-end-line="536" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TDiagram#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="method#programma#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#2299#2305#0" expanded="true" />
-            <element signature="method#declaration_of_constant#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#6147#6189#0" expanded="true" />
-            <element signature="method#declaration_of_variable#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#8089#8209#0" expanded="true" />
-            <element signature="e#8720#8724#0" expanded="true" />
-            <element signature="e#9148#9268#0" expanded="true" />
-            <element signature="e#10892#11011#0" expanded="true" />
-            <element signature="e#11394#11403#0" expanded="true" />
-            <element signature="e#11801#11918#0" expanded="true" />
-            <element signature="e#12547#12665#0" expanded="true" />
-            <element signature="method#lis_of_parametr#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#14076#14189#0" expanded="true" />
-            <element signature="method#compound_operator_WITHOUT_CREATE_BLACK_VERTEX#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#15417#15473#0" expanded="true" />
-            <element signature="method#compound_operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#18449#18505#0" expanded="true" />
-            <element signature="method#func_return#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#22824#22856#0" expanded="true" />
-            <element signature="method#assignment#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#25102#25219#0" expanded="true" />
-            <element signature="e#25541#25670#0" expanded="true" />
-            <element signature="method#func_call#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#26451#26483#0" expanded="true" />
-            <element signature="e#26961#27008#0" expanded="true" />
-            <element signature="e#27280#27312#0" expanded="true" />
-            <element signature="e#27787#27904#0" expanded="true" />
-            <element signature="e#29623#29703#0" expanded="true" />
-            <element signature="method#func_if#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#31551#31626#0" expanded="true" />
-            <element signature="e#32442#32517#0" expanded="true" />
-            <element signature="e#32993#33068#0" expanded="true" />
-            <element signature="e#33798#33873#0" expanded="true" />
-            <element signature="method#expression#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A2#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A3#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A4#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A5#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A6#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#41603#41615#0" expanded="true" />
-            <element signature="e#42874#42890#0" expanded="true" />
-            <element signature="method#arrayChar2String#0;class#TDiagram#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Semantic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9471">
-          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16842">
-          <caret line="802" column="0" lean-forward="false" selection-start-line="802" selection-start-column="0" selection-end-line="802" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setValue_from_Tree#0;class#Interpreter#0" expanded="true" />
-            <element signature="method#calculate#0;class#Interpreter#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Пример.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="16" column="5" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
-          <caret line="167" column="16" lean-forward="false" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
+          <caret line="167" column="16" selection-start-line="167" selection-start-column="16" selection-end-line="167" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result.gv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="46" lean-forward="false" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lexem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1890">
-          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4389">
-          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <caret line="237" selection-start-line="237" selection-end-line="237" />
         </state>
       </provider>
     </entry>
@@ -1055,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/src/Scaner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
-          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <caret line="265" selection-start-line="265" selection-end-line="265" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1065,14 +774,14 @@
     <entry file="file://$PROJECT_DIR$/src/SavePoint.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        <state relative-caret-position="391">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1081,104 +790,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setValue_from_Tree#0;class#Interpreter#0" expanded="true" />
-            <element signature="method#calculate#0;class#Interpreter#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Semantic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="451" column="0" lean-forward="false" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+        <state relative-caret-position="7582">
+          <caret line="451" selection-start-line="451" selection-end-line="451" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
+    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="308" column="28" lean-forward="false" selection-start-line="308" selection-start-column="12" selection-end-line="308" selection-end-column="28" />
+        <state relative-caret-position="748">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#TDiagram#0;class#TDiagram#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="315" column="75" selection-start-line="315" selection-start-column="75" selection-end-line="315" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#732#733#0" expanded="true" />
             <element signature="e#824#825#0" expanded="true" />
-            <element signature="method#programma#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#2299#2305#0" expanded="true" />
-            <element signature="method#declaration_of_constant#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#6147#6189#0" expanded="true" />
-            <element signature="method#declaration_of_variable#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#8089#8209#0" expanded="true" />
-            <element signature="e#8720#8724#0" expanded="true" />
-            <element signature="e#9148#9268#0" expanded="true" />
-            <element signature="e#10892#11011#0" expanded="true" />
-            <element signature="e#11394#11403#0" expanded="true" />
-            <element signature="e#11801#11918#0" expanded="true" />
-            <element signature="e#12547#12665#0" expanded="true" />
-            <element signature="method#lis_of_parametr#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#14076#14189#0" expanded="true" />
-            <element signature="method#compound_operator_WITHOUT_CREATE_BLACK_VERTEX#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#15417#15473#0" expanded="true" />
-            <element signature="method#compound_operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#18449#18505#0" expanded="true" />
-            <element signature="method#func_return#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#operator#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#22824#22856#0" expanded="true" />
-            <element signature="method#assignment#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#25102#25219#0" expanded="true" />
-            <element signature="e#25541#25670#0" expanded="true" />
-            <element signature="method#func_call#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#26451#26483#0" expanded="true" />
-            <element signature="e#26961#27008#0" expanded="true" />
-            <element signature="e#27280#27312#0" expanded="true" />
-            <element signature="e#27787#27904#0" expanded="true" />
-            <element signature="e#29623#29703#0" expanded="true" />
-            <element signature="method#func_if#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#31551#31626#0" expanded="true" />
-            <element signature="e#32442#32517#0" expanded="true" />
-            <element signature="e#32993#33068#0" expanded="true" />
-            <element signature="e#33798#33873#0" expanded="true" />
-            <element signature="method#expression#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A2#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A3#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A4#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A5#0;class#TDiagram#0" expanded="true" />
-            <element signature="method#A6#0;class#TDiagram#0" expanded="true" />
-            <element signature="e#41603#41615#0" expanded="true" />
-            <element signature="e#42874#42890#0" expanded="true" />
-            <element signature="method#arrayChar2String#0;class#TDiagram#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="63" column="28" lean-forward="true" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1239,6 +905,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
