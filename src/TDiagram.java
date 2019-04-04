@@ -31,6 +31,7 @@ public class TDiagram {
         scaner = new Scaner();
         if( this.programma()){
             System.out.println("\n\nall is ok");
+            this.triad.displayAll();
             this.flag_createPicture = 1;
             semantic.createPicture();
         }
@@ -879,6 +880,12 @@ public class TDiagram {
         if( !this.expression(containerG))
             return false;
 
+        // триада if
+        // триады создание печать
+        int indexTriad_If = this.triad.add("null","null", "if");
+        this.triad.printTriadNum(indexTriad_If);
+        this.lastTriad = "(" + String.valueOf(indexTriad_If) + ")";
+
         ///////////////////////////////////////////////////////////////////// inter
         // Точка 8: вычисляем новое значение флага интерпретации
         if( flag_interpreter != 0 && containerG.get_value_IF() != 0){
@@ -893,6 +900,7 @@ public class TDiagram {
             scaner.printError("30Ожидался символ ')'", l);
             return false;
         }
+        int indexTriad_BeforeBody = this.triad.getCurrentIndex();
 
         if( !this.operator())
             return false;
@@ -905,17 +913,39 @@ public class TDiagram {
             flag_interpreter = 1 - flag_interpreter;
         }
 
+        int indexTriad_BeforeBodyElse = this.triad.getCurrentIndex();
+
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);
+        int indexTriad_GO = -1;
+        int indexTriad_ELSE_FINISH = -1;
         if( t == scaner._ELSE) {
+            // триада Если есть иф, надо присрать GOTO
+            indexTriad_GO = this.triad.add("null","","GO");
+            this.triad.printTriadNum(indexTriad_GO);
+            this.lastTriad = "(" + String.valueOf(indexTriad_GO) + ")";
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             if( !this.operator())/////////////////////////////////////////////////////////////////////////////////
                 return false;
+
+            indexTriad_ELSE_FINISH = this.triad.getCurrentIndex();
+            int s = indexTriad_ELSE_FINISH;
+
             //System.out.println();
         }else{
            scaner.setSavePoint(savePoint1);
         }
+        ///////////////////////// Возвращаемся и дозаполняем if go и тд
+        TriadElem triad_IF = triad.getTriad(indexTriad_If );
+        triad_IF.setOperandFirst("(" + String.valueOf(indexTriad_BeforeBody + 1) + ")");
+        // Если есть else
+        if( indexTriad_GO != -1){
+            triad_IF.setOperandSecond("(" + String.valueOf(indexTriad_GO + 1) + ")");
+            TriadElem triad_GO = triad.getTriad(indexTriad_GO);
+            triad_GO.setOperandFirst("(" + String.valueOf(indexTriad_ELSE_FINISH + 1) + ")");
 
+
+        }
         ///////////////////////////////////////////////////////////////////// inter
         // Точка 10: восстанавливаем исходное значение флага интерпретации
         flag_interpreter = local_flag_interpreter;

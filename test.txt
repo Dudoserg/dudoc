@@ -5,7 +5,16 @@ int main(){
     int b = 3;
     if( a == 3){
         b = 1;
+        int c = 222;
+        if( b == 1){
+            int cc = 2;
+        }else{
+            int dd = 3;
+        }
     } else{
         b = 2;
+        int d = 222;
     }
+
+    int x = 2 + 2;
 }

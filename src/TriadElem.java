@@ -9,6 +9,18 @@ public class TriadElem {
         this.operatorTriad = operatorTriad;
     }
 
+    public void setOperandFirst(String operandFirst) {
+        this.operandFirst = operandFirst;
+    }
+
+    public void setOperandSecond(String operandSecond) {
+        this.operandSecond = operandSecond;
+    }
+
+    public void setOperatorTriad(String operatorTriad) {
+        this.operatorTriad = operatorTriad;
+    }
+
     public String getOperandFirst() {
         return operandFirst;
     }

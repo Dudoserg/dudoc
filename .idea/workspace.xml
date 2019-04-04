@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944592eb-3811-44ed-bd16-5c2db64b5e8c" name="Default" comment="Добавил триады (выражения)">
+    <list default="true" id="944592eb-3811-44ed-bd16-5c2db64b5e8c" name="Default" comment="Коммит перед добавлением триады на if">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/TDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/TDiagram.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.gv" beforeDir="false" afterPath="$PROJECT_DIR$/result.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TDiagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Triad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TriadElem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TriadElem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,32 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="1187" column="35" lean-forward="true" selection-start-line="1187" selection-start-column="35" selection-end-line="1187" selection-end-column="35" />
+            <state relative-caret-position="276">
+              <caret line="944" column="43" selection-start-line="944" selection-start-column="43" selection-end-line="944" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="85">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -66,9 +47,15 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TriadElem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="-12">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
                 <element signature="e#388#389#0" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
                 <element signature="e#463#464#0" expanded="true" />
@@ -83,50 +70,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Triad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="260">
+              <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -142,11 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>A6(</find>
-      <find>nameNode</find>
-      <find>восстанавливаем</find>
-      <find>func)_</find>
-      <find>func_cal</find>
       <find>protot</find>
       <find>pro</find>
       <find>prototype</find>
@@ -172,6 +118,11 @@
       <find>// триады</find>
       <find>operatorTriad</find>
       <find>&quot;)&quot;</find>
+      <find>func_if</find>
+      <find>printTriadNum</find>
+      <find>indexTriad_AFTER_ELSE</find>
+      <find>all is</find>
+      <find>GO</find>
     </findStrings>
     <replaceStrings>
       <replace>public final static</replace>
@@ -186,6 +137,7 @@
       <replace>imax</replace>
       <replace>double</replace>
       <replace>operatorT</replace>
+      <replace>indexTriad_ELSE_FINISH</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -205,10 +157,10 @@
         <option value="$PROJECT_DIR$/src/Semantic.java" />
         <option value="$PROJECT_DIR$/src/Interpreter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/Triad.java" />
         <option value="$PROJECT_DIR$/src/TriadElem.java" />
-        <option value="$PROJECT_DIR$/src/TDiagram.java" />
+        <option value="$PROJECT_DIR$/src/Triad.java" />
         <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/src/TDiagram.java" />
       </list>
     </option>
   </component>
@@ -358,7 +310,7 @@
       <workItem from="1551805924373" duration="13000" />
       <workItem from="1554284033222" duration="272000" />
       <workItem from="1554291140625" duration="661000" />
-      <workItem from="1554408994721" duration="389000" />
+      <workItem from="1554408994721" duration="2562000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил триады (выражения)">
       <created>1554291646075</created>
@@ -367,14 +319,22 @@
       <option name="project" value="LOCAL" />
       <updated>1554291646075</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Коммит перед добавлением триады на if">
+      <created>1554409429103</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1554409429103</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209119000" />
+    <option name="totallyTimeSpent" value="211292000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11825193" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -386,7 +346,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -413,7 +373,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил триады (выражения)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил триады (выражения)" />
+    <MESSAGE value="Коммит перед добавлением триады на if" />
+    <option name="LAST_COMMIT_MESSAGE" value="Коммит перед добавлением триады на if" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -479,16 +440,10 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interpreter.java</url>
-          <line>813</line>
+          <url>file://$PROJECT_DIR$/src/TDiagram.java</url>
+          <line>950</line>
           <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Interpreter.java</url>
-          <line>811</line>
-          <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="272" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -583,32 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TriadElem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding>
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -626,30 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="1187" column="35" lean-forward="true" selection-start-line="1187" selection-start-column="35" selection-end-line="1187" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -660,10 +569,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="813" selection-start-line="813" selection-end-line="813" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="44" column="34" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TriadElem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="944" column="43" selection-start-line="944" selection-start-column="43" selection-end-line="944" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

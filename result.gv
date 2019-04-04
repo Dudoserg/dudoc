@@ -55,15 +55,26 @@ graph binary {
 	v5[style=filled, fillcolor=grey]
 	v5[label="black[5]"]
 	v5[xlabel=" "]
-	v5notVisibleL [style=invis]
-	v5 -- v5notVisibleL [style=invis];
+	v5 -- v8
 	v5center [style=invis, width=0, label=""];
 	v5 -- v5center [style=invis];
 	v5 -- v6	{
-		rank=same v5notVisibleL -- v5center  -- v6 [style=invis] 
+		rank=same v8 -- v5center  -- v6 [style=invis] 
 	}
+	v8[label="x[8]"]
+	v8[xlabel="int=4 "]
 	v6[style=filled, fillcolor=grey]
 	v6[label="black[6]"]
 	v6[xlabel=" "]
+	v6 -- v7
+	v6center [style=invis, width=0, label=""];
+	v6 -- v6center [style=invis];
+	v6notVisibleR [style=invis]
+	v6 -- v6notVisibleR [style=invis];
+	{
+		rank=same v7 -- v6center  -- v6notVisibleR  [style=invis] 
+	}
+	v7[label="d[7]"]
+	v7[xlabel="int=222 "]
 
 }

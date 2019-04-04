@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Triad {
 
+    public  boolean DEBUG_MODE = false;
+
     ArrayList<TriadElem> triads;
 
     public Triad() {
@@ -15,6 +17,9 @@ public class Triad {
 
         return this.getCurrentIndex();
     }
+    public TriadElem getTriad(int num){
+        return this.triads.get(num);
+    }
     public int getCurrentIndex(){
         return triads.size() - 1;
     }
@@ -27,7 +32,18 @@ public class Triad {
         result += triadElem.getOperatorTriad() + " ";
         result += triadElem.getOperandFirst() + " ";
         result += triadElem.getOperandSecond() + " ";
-        System.out.println(result);
+        if( this.DEBUG_MODE )
+            System.out.println(result);
+        else
+            System.out.print("");
+    }
+
+    public void displayAll(){
+        this.DEBUG_MODE = true;
+        System.out.println("============================================================================");
+        for(int i = 0 ; i < this.triads.size(); i++)
+            this.printTriadNum(i);
+        System.out.println("============================================================================");
     }
 
 }
