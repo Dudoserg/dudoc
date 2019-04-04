@@ -32,8 +32,8 @@ graph binary {
 	{
 		rank=same v3 -- v2center  -- v2notVisibleR  [style=invis] 
 	}
-	v3[label="b[3]"]
-	v3[xlabel="int=6 "]
+	v3[label="a[3]"]
+	v3[xlabel="int=2 "]
 	v3 -- v4
 	v3center [style=invis, width=0, label=""];
 	v3 -- v3center [style=invis];
@@ -42,7 +42,28 @@ graph binary {
 	{
 		rank=same v4 -- v3center  -- v3notVisibleR  [style=invis] 
 	}
-	v4[label="a[4]"]
-	v4[xlabel="int=7 "]
+	v4[label="b[4]"]
+	v4[xlabel="int=2 "]
+	v4 -- v5
+	v4center [style=invis, width=0, label=""];
+	v4 -- v4center [style=invis];
+	v4notVisibleR [style=invis]
+	v4 -- v4notVisibleR [style=invis];
+	{
+		rank=same v5 -- v4center  -- v4notVisibleR  [style=invis] 
+	}
+	v5[style=filled, fillcolor=grey]
+	v5[label="black[5]"]
+	v5[xlabel=" "]
+	v5notVisibleL [style=invis]
+	v5 -- v5notVisibleL [style=invis];
+	v5center [style=invis, width=0, label=""];
+	v5 -- v5center [style=invis];
+	v5 -- v6	{
+		rank=same v5notVisibleL -- v5center  -- v6 [style=invis] 
+	}
+	v6[style=filled, fillcolor=grey]
+	v6[label="black[6]"]
+	v6[xlabel=" "]
 
 }

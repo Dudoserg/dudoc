@@ -264,7 +264,7 @@ public class TDiagram {
                 // триады создание печать
                 int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
                 this.triad.printTriadNum(indexTriad);
-                this.lastTriad = String.valueOf(indexTriad) + ")";
+                this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
                 savePoint1 = scaner.getSavePoint();
                 t = scaner.next(l);
@@ -691,7 +691,7 @@ public class TDiagram {
         // триады создание печать
         int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
         this.triad.printTriadNum(indexTriad);
-        this.lastTriad = String.valueOf(indexTriad) + ")";
+        this.lastTriad = "(" +String.valueOf(indexTriad) + ")";
 
         t = scaner.next(l);
         if( t != scaner._SEMICOLON){
@@ -974,7 +974,7 @@ public class TDiagram {
             // триады создание печать
             int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
             this.triad.printTriadNum(indexTriad);
-            this.lastTriad = String.valueOf(indexTriad) + ")";
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
 
             savePoint1 = scaner.getSavePoint();
@@ -1037,7 +1037,7 @@ public class TDiagram {
             // триады создание печать
             int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
             this.triad.printTriadNum(indexTriad);
-            this.lastTriad = String.valueOf(indexTriad) + ")";
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
 
               savePoint1 = scaner.getSavePoint();
@@ -1096,7 +1096,7 @@ public class TDiagram {
             // триады создание печать
             int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
             this.triad.printTriadNum(indexTriad);
-            this.lastTriad = String.valueOf(indexTriad) + ")";
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
@@ -1152,7 +1152,7 @@ public class TDiagram {
             // триады создание печать
             int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
             this.triad.printTriadNum(indexTriad);
-            this.lastTriad = String.valueOf(indexTriad) + ")";
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
@@ -1210,7 +1210,7 @@ public class TDiagram {
             // триады создание печать
             int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
             this.triad.printTriadNum(indexTriad);
-            this.lastTriad = String.valueOf(indexTriad) + ")";
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
             savePoint1 = scaner.getSavePoint();
             t = scaner.next(l);
