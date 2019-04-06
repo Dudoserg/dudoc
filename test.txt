@@ -1,20 +1,19 @@
 
+int myFunc(int a, int b){
+    {
+
+    int x = 1 + 2 * 3;}
+    return x;
+}
+
+
 int main(){
 
-    int a = 2;
-    int b = 3;
-    if( a == 3){
-        b = 1;
-        int c = 222;
-        if( b == 1){
-            int cc = 2;
-        }else{
-            int dd = 3;
-        }
-    } else{
-        b = 2;
-        int d = 222;
+    int result = myFunc(3 + 5, 8 + 9);
+    if( 1 == 2){
+        result = myFunc(33,44);
+    }else{
+    myFunc(33,44);
     }
 
-    int x = 2 + 2;
 }

@@ -3,6 +3,13 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 public class TDiagram {
+
+    boolean SHOW_NAME_NOT_TERMINAL = false;
+
+    boolean FLAG_INTERP = false;
+
+    boolean FLAG_TRIAD_CREATE_BLOCK = false;
+
     Scaner scaner ;
 
     Semantic semantic;
@@ -24,7 +31,6 @@ public class TDiagram {
 
     Stack stack = new Stack();
 
-    boolean SHOW_NAME_NOT_TERMINAL = false;
 
     public TDiagram() throws IOException, InterruptedException, Exception {
 
@@ -214,6 +220,14 @@ public class TDiagram {
             scaner.printError("9Ожидалось ключевое слово 'int'/'double'",l);
             return false;
         }
+        String operatorT_type = "";
+
+        if( t == scaner._INT){
+            operatorT_type = "int";
+        } else if(t == scaner._DOUBLE){
+            operatorT_type = "double";
+        }
+
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    sem1
         semantic.sem1(l, containerT);
@@ -222,12 +236,22 @@ public class TDiagram {
         do{
             t = scaner.next(l);
 
+
+
             operandFirst = arrayChar2String(l);
 
             if( t != scaner._ID){
                 scaner.printError("10Ожидался идентификато",l);
                 return false;
             }
+            operandFirst = this.arrayChar2String(l);
+            operandSecond = "null";
+
+            // триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT_type);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = String.valueOf(indexTriad) ;
+
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    sem2
             ///////////////////////////////////////     в точке 1 запомнить адрес переменной a в семантической таблице
 
@@ -249,6 +273,9 @@ public class TDiagram {
                 container2 = containerG.copy();
                 operandSecond = this.lastTriad;
 
+
+
+
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////    sem3
 
                 semantic.sem3(containerT, containerG, l);
@@ -263,7 +290,7 @@ public class TDiagram {
 
 
                 // триады создание печать
-                int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+                 indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
                 this.triad.printTriadNum(indexTriad);
                 this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
@@ -285,8 +312,15 @@ public class TDiagram {
     }
 
 
-    // функция
+    // функция  объявление функции
     public boolean func() throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("func");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -307,6 +341,13 @@ public class TDiagram {
             scaner.printError("13Ожидался идентификатор", l);
             return false;
         }
+
+        operandFirst = this.arrayChar2String(l);
+        operatorT = "func_Start";
+        operandSecond = "null";
+        String funcName = this.arrayChar2String(l);
+
+
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem21
         // объявление функции
         Tree k = semantic.sem21(l,containerT);
@@ -334,6 +375,12 @@ public class TDiagram {
             scaner.printError("15Ожидался символ ')'", l);
             return false;
         }
+
+        // триады создание печать
+        int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+        this.triad.printTriadNum(indexTriad);
+        this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
+
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////inter
         // если это не мейн, то мы не будем интерпретировать тело функции
         if( typeFunction != Scaner._MAIN)
@@ -351,6 +398,14 @@ public class TDiagram {
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem18
         semantic.sem18(k);
 
+        operandFirst = funcName;
+        operatorT = "func_End";
+        operandSecond = "null";
+
+        //триады создание печать
+        indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+        this.triad.printTriadNum(indexTriad);
+        this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
         return true;
     }
@@ -394,6 +449,13 @@ public class TDiagram {
 
     // составной оператор
     public boolean compound_operator_WITHOUT_CREATE_BLACK_VERTEX( ) throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("compound_operator");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -404,6 +466,15 @@ public class TDiagram {
             scaner.printError("18Ожидался символ '{'",l);
             return false;
         }
+        if(FLAG_TRIAD_CREATE_BLOCK){
+            operandFirst = "null";
+            operandSecond = "null";
+            operatorT = "block_Start";
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
+        }
+
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         savePoint1 = scaner.getSavePoint();
         t = scaner.next(l);        // Считали
@@ -452,7 +523,14 @@ public class TDiagram {
             return false;
         }
 
-
+        if(FLAG_TRIAD_CREATE_BLOCK) {
+            operandFirst = "null";
+            operandSecond = "null";
+            operatorT = "block_End";
+            int indexTriad = this.triad.add(operandFirst, operandSecond, operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
+        }
 
         if( this.pointer_current_function != null){
             if(interpreter.end_function() == true)
@@ -470,6 +548,11 @@ public class TDiagram {
 
     // составной оператор
     public boolean compound_operator() throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("compound_operator");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -479,6 +562,14 @@ public class TDiagram {
         if( t != scaner._BRACE_OPEN){
             scaner.printError("18Ожидался символ '{'",l);
             return false;
+        }
+        if(FLAG_TRIAD_CREATE_BLOCK){
+            operandFirst = "null";
+            operandSecond = "null";
+            operatorT = "block_Start";
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem4
         Tree k = semantic.sem4();
@@ -528,6 +619,14 @@ public class TDiagram {
         if(t != scaner._BRACE_CLOSE){
             scaner.printError("19ожидался символ '}'",l);
             return false;
+        }
+        if(FLAG_TRIAD_CREATE_BLOCK){
+            operandFirst = "null";
+            operandSecond = "null";
+            operatorT = "block_End";
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
         }
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem18
         semantic.sem18(k);
@@ -703,6 +802,13 @@ public class TDiagram {
     }
     // вызов функции
     public boolean func_call(Container container) throws IOException, InterruptedException, Exception {
+
+        String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2;
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("function_call");
         ArrayList<Character> l = new ArrayList<>();
         int t ;
@@ -716,12 +822,14 @@ public class TDiagram {
 //            return false;
 //        }
 
+        String nameCalledFunction = "";
 
         t = scaner.next(l);
         if( t != scaner._ID){
             scaner.printError("25ожидался идентификатор", l);
             return false;
         }
+        nameCalledFunction = this.arrayChar2String(l);
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////// sem5
         Tree k;
         // Проверяем объявлена ли функция, ищем ее узел
@@ -758,6 +866,13 @@ public class TDiagram {
                 if( this.is_interpritation())
                     this.stack.push(containerG.copy());
 
+                operatorT = "push";
+                operandSecond = "null";
+                operandFirst = this.lastTriad;
+                // триады создание печать
+                int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+                this.triad.printTriadNum(indexTriad);
+                this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
 
                 //////////////////////////////////////////////////////////////////////////////////////////////////////// semCheckType
                 savePoint1 = scaner.getSavePoint();
@@ -783,6 +898,19 @@ public class TDiagram {
         if (this.flag_manual_interpritation != 1)
             if( this.flag_interpreter != 1 )
                 return true;
+
+        operatorT = "call";
+        operandSecond = "null";
+        operandFirst = nameCalledFunction;
+        // триады создание печать
+        int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+        this.triad.printTriadNum(indexTriad);
+        this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
+
+        if(FLAG_INTERP == false)
+            return true;
+
+
 
         // запоминаем точку, для возвращения из фукнции
         k.n.savePoint_after_function_call = scaner.getSavePoint();
@@ -831,13 +959,14 @@ public class TDiagram {
 
 
         //считываем значение с функции
-
-        container.value = this.pointer_current_function.n.value.copy();
-        container.type = this.pointer_current_function.n.returnType;
-
+        if(FLAG_INTERP) {
+            container.value = this.pointer_current_function.n.value.copy();
+            container.type = this.pointer_current_function.n.returnType;
+        }
 
         // восстанавливаем глобальный указатель на вызыванную функцию
-        this.pointer_current_function = local_pointer_current_function;
+        if(FLAG_INTERP)
+            this.pointer_current_function = local_pointer_current_function;
 
 
         // удаляем функцию из дерева
@@ -857,7 +986,7 @@ public class TDiagram {
         ///////////////////////////////////////////////////////////////////// inter
         // Точка 7: сохраняем текущее значение флага интерпретации
         int local_flag_interpreter = this.flag_interpreter;
-        
+
         if(SHOW_NAME_NOT_TERMINAL) System.out.println("function_call");
         ArrayList<Character> l = new ArrayList<>();
         int t ;

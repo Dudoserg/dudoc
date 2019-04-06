@@ -6,6 +6,8 @@ public class Interpreter {
 
     TDiagram tDiagram;
 
+
+
     private String arrayChar2String(ArrayList<Character> l){
 
         String result = "";
@@ -17,6 +19,8 @@ public class Interpreter {
 
     // Устанавливаем ЗНАЧЕНИЕ переменной в КОНТЕЙНЕРЕ
     public void saveValue(ArrayList<Character> l, Container container){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
@@ -45,14 +49,22 @@ public class Interpreter {
     }
 
     public void setValue_from_Tree(Tree node, Container container){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
-        container.value = node.n.value_copy();
+        if( node != null)
+            container.value = node.n.value_copy();
+        else
+            container.value = new TDataValue(0,0, (char) 0,true);
+
     }
 
 
     public void calculate( Container first, Container second, int sign){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
@@ -806,6 +818,8 @@ public class Interpreter {
 
     // Записываем значение в дерево
     public void saveValue_in_Tree(Container container, Tree k){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
@@ -819,6 +833,9 @@ public class Interpreter {
 
     // Восстанавливаем стек в переменные фукнции
     public void read_param_from_stack(Tree current, Stack<Container> stack){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
+
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
@@ -833,6 +850,9 @@ public class Interpreter {
 
     /// получаем node и container. Присваиваем функции значение с приведением типов
     public  void set_value_in_return(Tree node, Container container){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return;
+
         if (this.tDiagram.flag_manual_interpritation != 1)
             if( this.tDiagram.flag_interpreter != 1 )
                 return ;
@@ -896,6 +916,9 @@ public class Interpreter {
     // Конец функции, в случае ретерна, и в случае конца блока функции
     // true значит прекращаем функцию из которой вызвана эта функция
     public boolean end_function(Container containerT){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return true;
+
         // Если не интерпритируем, то не идем дальше
         if (this.tDiagram.flag_manual_interpritation == 1 || this.tDiagram.flag_interpreter == 1) {
             // сохраняем полученное значение в функцию
@@ -914,7 +937,11 @@ public class Interpreter {
         }
         return false;
     }
+
+
     public boolean end_function( ){
+        if(this.tDiagram.FLAG_INTERP == false)
+            return true;
         // Если не интерпритируем, то не идем дальше
         if (this.tDiagram.flag_manual_interpritation == 1 || this.tDiagram.flag_interpreter == 1) {
             Container containerT = new Container();

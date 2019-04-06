@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Triad {
 
-    public  boolean DEBUG_MODE = false;
+    public  boolean DEBUG_MODE = true;
 
     ArrayList<TriadElem> triads;
 
@@ -30,8 +30,12 @@ public class Triad {
         TriadElem triadElem = this.triads.get(num);
         result += num + ") ";
         result += triadElem.getOperatorTriad() + " ";
-        result += triadElem.getOperandFirst() + " ";
-        result += triadElem.getOperandSecond() + " ";
+
+        if( !triadElem.getOperandFirst().equals("null"))
+            result += triadElem.getOperandFirst() + " ";
+
+        if( !triadElem.getOperandSecond().equals("null"))
+            result += triadElem.getOperandSecond() + " ";
         if( this.DEBUG_MODE )
             System.out.println(result);
         else

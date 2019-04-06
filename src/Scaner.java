@@ -77,7 +77,7 @@ public class Scaner {
         this.KEYWORD.add(new Tuple<>("main",_MAIN));
         this.KEYWORD.add(new Tuple<>("const",_CONST));
 
-        String path = System.getProperty("user.dir") + "\\test.txt";
+        String path = System.getProperty("user.dir") + "/test.txt";
         try {
             FileReader fileReader = new FileReader(path);
         }catch (FileNotFoundException ex){

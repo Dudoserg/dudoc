@@ -218,7 +218,12 @@ public class Semantic {
             System.out.println(ex.getMessage());
         }
         // this.console("dot result.gv -Tpng -o result.jpg");
-        Runtime.getRuntime().exec("cmd /c dot result.gv -Tpng -o result.jpg");
+        if( System.getProperty("os.name").equals("Linux")){
+            Runtime.getRuntime().exec("dot result.gv -Tpng -o result.jpg");
+
+        }else{
+            Runtime.getRuntime().exec("cmd /c dot result.gv -Tpng -o result.jpg");
+        }
         //TimeUnit.SECONDS.sleep(5);
        // Runtime.getRuntime().exec("cmd /c result.jpg");
         // this.console(".\\result.jpg");

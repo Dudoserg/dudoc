@@ -1,0 +1,10 @@
+   String operandFirst = "";
+        String operandSecond = "";
+        String operatorT = "";
+        Container container1;
+        Container container2
+
+// триады создание печать
+            int indexTriad = this.triad.add(operandFirst,operandSecond,operatorT);
+            this.triad.printTriadNum(indexTriad);
+            this.lastTriad = "(" + String.valueOf(indexTriad) + ")";
