@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944592eb-3811-44ed-bd16-5c2db64b5e8c" name="Default" comment="Коммит перед добавлением триады на if">
-      <change afterPath="$PROJECT_DIR$/help" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Container.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Container.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Interpreter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Interpreter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Lexem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Lexem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/SavePoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/SavePoint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Scaner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Scaner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Semantic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Semantic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/TDataValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/TDataValue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/TDiagram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/TDiagram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Tree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/yaziki_5/Tuple.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/yaziki_5/Tuple.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.gv" beforeDir="false" afterPath="$PROJECT_DIR$/result.gv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scaner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scaner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semantic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semantic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TDiagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TDiagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Triad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Triad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,24 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="872" selection-start-line="872" selection-end-line="872" />
-              <folding>
-                <element signature="e#846#847#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/help">
+        <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -64,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="681">
+              <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -73,7 +51,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Semantic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="10523">
               <caret line="624" selection-start-line="624" selection-end-line="624" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -85,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Triad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="510">
               <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
             </state>
           </provider>
@@ -103,17 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="221">
               <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+            <state relative-caret-position="1054">
+              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#calculate#0;class#Interpreter#0" />
@@ -204,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/Scaner.java" />
         <option value="$PROJECT_DIR$/help" />
         <option value="$PROJECT_DIR$/src/Triad.java" />
+        <option value="$PROJECT_DIR$/src/Interpreter.java" />
         <option value="$PROJECT_DIR$/src/TDiagram.java" />
         <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/src/Interpreter.java" />
       </list>
     </option>
   </component>
@@ -239,6 +217,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,15 +234,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554537262356" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556555658295" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/VKR" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -359,6 +337,12 @@
       <workItem from="1554291140625" duration="661000" />
       <workItem from="1554408994721" duration="2562000" />
       <workItem from="1554521407875" duration="8434000" />
+      <workItem from="1554537594632" duration="1098000" />
+      <workItem from="1554568786214" duration="993000" />
+      <workItem from="1554664088763" duration="72000" />
+      <workItem from="1554981846549" duration="155000" />
+      <workItem from="1556446170406" duration="2722000" />
+      <workItem from="1556555523439" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил триады (выражения)">
       <created>1554291646075</created>
@@ -378,13 +362,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219726000" />
+    <option name="totallyTimeSpent" value="225146000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20726496" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22300771" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -393,8 +377,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32929516" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42511013" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39569312" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.42511013" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -404,6 +388,8 @@
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32929516" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Tool Output" order="13" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -560,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/result.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -608,16 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Semantic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="624" selection-start-line="624" selection-end-line="624" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/help">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -625,21 +594,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.txt">
+    <entry file="file://$PROJECT_DIR$/yaziki_5.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
+    <entry file="file://$PROJECT_DIR$/src/Semantic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="872" selection-start-line="872" selection-end-line="872" />
+        <state relative-caret-position="10523">
+          <caret line="624" selection-start-line="624" selection-end-line="624" />
           <folding>
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Triad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -650,24 +625,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Triad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TDataValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="221">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="1054">
+          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#calculate#0;class#Interpreter#0" />
@@ -676,6 +644,20 @@
             <element signature="method#end_function#0;class#Interpreter#0" />
             <element signature="method#end_function#1;class#Interpreter#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TDiagram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -736,6 +718,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

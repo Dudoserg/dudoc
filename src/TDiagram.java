@@ -6,7 +6,7 @@ public class TDiagram {
 
     boolean SHOW_NAME_NOT_TERMINAL = false;
 
-    boolean FLAG_INTERP = false;
+    boolean FLAG_INTERP = true;
 
     boolean FLAG_TRIAD_CREATE_BLOCK = false;
 
